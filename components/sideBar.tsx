@@ -5,6 +5,9 @@ import Link from 'next/link'
 import GoogleLogin from 'react-google-login'
 import { AiFillHome, AiOutlineMenu } from "react-icons/ai"
 import { ImCancelCircle } from "react-icons/im"
+import Discover from './discover'
+import Footer from './footer'
+import SuggestedAccounts from './suggestedAccounts'
 
 
 function Sidebar() {
@@ -58,7 +61,7 @@ function Sidebar() {
                 <GoogleLogin
                   render={(renderProps) => (
                     <button
-                      className="px-6 py-2 border-2 border-[#F51997] text-[#F51997]"
+                      className="px-6 py-2 mt-2 text-lg cursor-pointer font-semibold border-[1px] border-[#F51997] rounded-md text-[#F51997] w-full  lg:hover:bg-[#F51997] lg:hover:lg:text-[#fff] outline-none"
                       onClick={renderProps.onClick}
                       disabled={renderProps.disabled}
                     >
@@ -72,8 +75,11 @@ function Sidebar() {
                 />
               </div>
             </div>
-          )}
+          )} {/* //? login Button on lg screen */}
 
+          <Discover />
+          <SuggestedAccounts />
+          <Footer />
         </div>
       )}
 
