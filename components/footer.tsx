@@ -9,7 +9,7 @@ type ListProps = {
 const List = ({ items, mt }: ListProps) => (
   <div className={`flex gap-2 flex-wrap ${mt && 'mt-5'}`}>
     {items.map((item) => (
-      <p className='text-gray-500 text-sm hover:underline cursor-pointer'>
+      <p key={item} className='text-gray-500 text-sm hover:underline cursor-pointer'>
         {item}
       </p>
     ))}
