@@ -77,8 +77,8 @@ const VideoCard: NextPage<VideoProps> = ({ post }) => {
             <video
               ref={videoRef}
               className='h-[300px] w-[200px] rounded-2xl cursor-pointer md:h-[400px] bg-gray-100 lg:w-[600px] lg:h-[550px] '
-              src={post.video.asset.url}>
-
+              src={post.video.asset.url}
+            >
             </video>
           </Link>
           {isHover && (
@@ -107,7 +107,7 @@ const VideoCard: NextPage<VideoProps> = ({ post }) => {
       </div>
 
 
-    </div>
+    </div >
   )
 }
 

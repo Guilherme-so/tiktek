@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { NextPage } from "next"
 import { useRouter } from "next/router"
 import Link from 'next/link'
-import GoogleLogin from 'react-google-login'
 import { AiFillHome, AiOutlineMenu } from "react-icons/ai"
 import { ImCancelCircle } from "react-icons/im"
 import Discover from './discover'
@@ -58,7 +57,7 @@ function Sidebar() {
                 Log in to like and comment on videos
               </p>
               <div className='pr-4'>
-                <GoogleLogin
+                {/* <GoogleLogin
                   render={(renderProps) => (
                     <button
                       className="px-6 py-2 mt-2 text-lg cursor-pointer font-semibold border-[1px] border-[#F51997] rounded-md text-[#F51997] w-full  lg:hover:bg-[#F51997] lg:hover:lg:text-[#fff] outline-none"
@@ -72,7 +71,7 @@ function Sidebar() {
                   onSuccess={() => { }}
                   onFailure={() => { }}
                   cookiePolicy="single_host_origin"
-                />
+                /> */}
               </div>
             </div>
           )} {/* //? login Button on lg screen */}
